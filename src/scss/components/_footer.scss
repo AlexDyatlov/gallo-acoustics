@@ -1,0 +1,73 @@
+.footer{
+  padding: 40px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  &__info{
+    display: flex;
+    .logo{
+      margin-right: 20px;
+      svg{
+        width: 86px;
+        height: 45px;
+      }
+    } 
+  }
+  &__columns{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: 20px;
+  }
+  &__copy{
+    text-transform: uppercase;
+  }
+}
+.footer__call{
+  text-transform: uppercase;
+  &-phone{
+    font-size: 27px;
+    line-height: 31px;
+    font-family: Gilroy-Regular, system-ui;
+    font-weight: bold;
+    margin-bottom: 2px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &-descr{
+   font-size: 12px;
+   line-height: 16px;
+  }
+}
+.footer__list{
+  &-item{
+    &+&{
+      margin-top: 20px;
+    }
+  }
+  &-link{
+    text-transform: uppercase;
+    transition: color 0.4s;
+    &:hover{
+      color: $color-blue;
+      transition: color 0.4s;
+    }
+  }
+}
+.footer__list-info{
+  .footer__list-link{
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      right: -16px;
+      top: 2px;
+      width: 13px;
+      height: 13px;
+      background: center/cover no-repeat url('../img/arrow-up.svg');
+    }
+  }
+}

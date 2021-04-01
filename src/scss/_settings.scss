@@ -15,7 +15,10 @@ body {
 }
 
 body {
-  font-family: "asd", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  @include f400;
+  color: $color-black;
   background-color: $color-white;
 }
 
@@ -42,7 +45,7 @@ button {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1200px;
+  max-width: 1230px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

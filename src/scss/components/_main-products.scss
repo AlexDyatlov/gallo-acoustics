@@ -1,0 +1,103 @@
+.products__slider{
+  position: relative;
+  background: #e2e6ea;
+  margin-bottom: 90px;
+  cursor: pointer;
+}
+.products-item{
+  display: block;
+  &__top{
+    position: relative;
+    background: center/cover no-repeat;
+    transition: transform 0.5s;
+  }
+  &__text{
+    display: flex;
+    align-items: flex-end;
+    min-height: 520px;
+    font-size: 40px;
+    line-height: 44px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    @include f600;
+    text-transform: uppercase;
+    span{
+      color: $color-blue;
+      margin-right: 10px;
+    }
+  }
+}
+.products__info{
+  padding: 9px 0;
+  color: $color-white;
+  background-color: $color-blue;
+  text-transform: uppercase;
+  transition: opacity 0.5s;
+  &-title{
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 60px;
+    @include f600;
+    letter-spacing: 2px;
+  }
+  &-text{
+    letter-spacing: 1px;
+    padding-left: 60px;
+  }
+}
+.swiper-container-horizontal > .swiper-pagination-bullets{
+  bottom: -50px;
+  cursor: default;
+  .swiper-pagination-bullet{
+    margin: 0 10px;
+  }
+} 
+.products-btn{
+  .swiper-pagination-bullet{
+    width: 18px;
+    height: 18px;
+    background-color: $color-blue;
+    opacity: 1;
+    transition: opacity 0.3s;
+    &-active{
+      background-color: $color-black;
+    }
+    &:hover{
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+  }
+}
+.products-item{
+  &:hover{
+    .products-item__top{
+      transform: scale(1.01);
+      transition: transform 0.5s;
+    }
+    .products__info{
+      opacity: 0.8;
+      transition: opacity 0.5s;
+    }
+  }
+}
+.discounts-products__slider{
+  .products__info{
+    padding: 18px 0;
+  }
+  .products-item__text{
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: $color-white;
+    font-size: 60px;
+    line-height: 100%;
+    @include f400;
+    span{
+      color: $color-white;
+      font-size: 190px;
+      line-height: 100%;
+      display: block;
+      @include f600;
+    }
+  }
+}

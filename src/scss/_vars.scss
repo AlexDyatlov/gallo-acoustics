@@ -1,2 +1,11 @@
 $color-black: #000;
 $color-white: #fff;
+$color-blue: #1d9cd8;
+@mixin f400{
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 400;
+}
+@mixin f600{
+  font-family: "Gilroy-SemiBold", sans-serif;
+  font-weight: 600;
+}
